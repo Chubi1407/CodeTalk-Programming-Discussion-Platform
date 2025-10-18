@@ -1,0 +1,36 @@
+version: '3.1'
+
+services:
+  couchdb:
+    image: couchdb:latest
+    container_name: couchdb
+    restart: always
+    environment:
+      COUCHDB_USER: esq498
+      COUCHDB_PASSWORD: Igboukwu.2022
+    ports:
+      - "5984:5984"
+
+  backend:
+    build: ./backend
+    container_name: backend
+    restart: always
+    depends_on:
+      - couchdb
+    environment:
+    - COUCHDB_URL=http://esq498:Igboukwu.2022@couchdb:5984
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/app
+    command: ["node", "server.js"]
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3001:3000"
+    depends_on:
+      - backend
+
+volumes:
+  couchdb_data:

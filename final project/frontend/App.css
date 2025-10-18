@@ -1,0 +1,522 @@
+/* Main container */
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f5ff;
+  color: #333;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.home-title {
+  color: #6a0dad;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+/* Welcome & logout */
+.welcome-section {
+  margin-bottom: 20px;
+}
+
+.logout-button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  background-color: #6a0dad;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Search */
+.search-bar {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  width: 60%;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.search-mode {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.sort-mode {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+}
+
+/* Post count */
+.user-post-list {
+  margin-top: 20px;
+}
+
+/* Channel select */
+.channel-select-wrapper {
+  margin-top: 20px;
+}
+
+.channel-dropdown {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #6a0dad;
+}
+
+/* Channel form */
+.channel-form {
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.channel-form input {
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 45%;
+}
+
+.channel-form button {
+  padding: 8px 16px;
+  background-color: #6a0dad;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Post form */
+.post-form {
+  margin-top: 30px;
+}
+
+.post-form input,
+.post-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.tag-input {
+  margin-bottom: 10px;
+}
+
+.image-preview {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.image-preview img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.image-preview button {
+  background: transparent;
+  border: none;
+  color: #d00;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Submit */
+.submit-button {
+  background-color: #6a0dad;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Posts */
+.posts-list {
+  margin-top: 20px;
+}
+
+.posts-list li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.posts-list img {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.tag-badge {
+  font-size: 0.9rem;
+  color: #555;
+  margin-right: 6px;
+  background: #eee;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Ratings */
+.rating-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+/* Admin buttons */
+.delete-button {
+  color: red;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.resolved-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resolved-button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.resolved-button.inactive {
+  background-color: #ddd;
+  color: #333;
+}
+.post-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: scale(1.01);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-topic {
+  font-size: 1.2rem;
+  color: #6a0dad;
+  margin: 0;
+}
+
+.post-user {
+  font-weight: bold;
+  color: #555;
+}
+
+.post-body {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.post-tags {
+  margin-top: 10px;
+}
+
+.tag-badge {
+  background-color: #eee;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-right: 6px;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+.post-image {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.post-actions {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.post-rating {
+  font-weight: bold;
+}
+
+.resolved-button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.resolved-button.active {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.resolved-button.inactive {
+  background-color: #ddd;
+  color: #333;
+}
+
+.delete-button {
+  background-color: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+}
+
+.reply-form {
+  margin-top: 10px;
+}
+
+.reply-form input {
+  width: 100%;
+  padding: 8px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.reply-toggle {
+  background-color: transparent;
+  color: #6a0dad;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.reply-form {
+  margin-top: 10px;
+}
+
+.reply-input {
+  width: 100%;
+  min-height: 60px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  margin-bottom: 6px;
+}
+
+.reply-submit {
+  background-color: #6a0dad;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.post-rating-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.post-rating {
+  font-weight: bold;
+  color: #333;
+}
+
+.rate-btn {
+  background-color: #eee;
+  border: none;
+  padding: 6px 10px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.rate-btn:hover {
+  background-color: #dcd0ff;
+}
+.toolbar-section {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.search-sort-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.dropdown {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  min-width: 130px;
+  background-color: #f7f5ff;
+}
+
+.user-count-card {
+  margin-bottom: 20px;
+  background: #f5f0ff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #dcd3f8;
+}
+
+.channel-select {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3eaff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.user-level {
+  font-style: italic;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.logout-button {
+  background-color: #6a0dad;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #5c0099;
+}
+.admin-dashboard {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+.admin-btn {
+  background-color: #ff5c5c;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.admin-btn:hover {
+  background-color: #e04b4b;
+}
+
+
+.admin-dashboard h2 {
+  color: #6a0dad;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard section {
+  margin-bottom: 30px;
+}
+
+.admin-dashboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-dashboard li {
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #eee;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-dashboard button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
